@@ -16,7 +16,7 @@ class apache
 	exec
 	{
 	   "yum-update":
-	    command => "/usr/bin/yum -y update",
+	    command => "/usr/bin/yum update -y
 		require => Service['httpd'],
-																									        	}
+	}
 } # end of class apache
